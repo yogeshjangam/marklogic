@@ -1,2 +1,2 @@
 # marklogic
-Explore MarkLogic 9 features
+Explore MarkLogic 10 features

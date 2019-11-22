@@ -47,3 +47,40 @@ JVM:          13.0.1 (Oracle Corporation 13.0.1+9)
 OS:           Windows 10 10.0 amd64
 
 so we can setup database and code using automation
+
+
+==================
+
+
+once gradel is setup
+ we run below to  setup a test proejct
+
+ PS C:\yj\src\marklogic\test-ml-gradle> gradle mlNewProject
+
+> Task :mlNewProject
+Welcome to the new project wizard. Please answer the following questions to start a new project.
+Note that this will overwrite your current build.gradle and gradle.properties files, and backup copies of each will be made.
+[ant:input] Application name: [myApp]
+<-<--<-------------> 0% EXECUTING [7s]
+[ant:input] Host to deploy to: [localhost]
+<-------<-------------> 0% EXECUTING [12s]
+[ant:input] MarkLogic admin username: [admin]
+<----<-------------> 0% EXECUTING [15s]
+[ant:input] MarkLogic admin password: [admin]
+<-<-------------> 0% EXECUTING [26s]
+[ant:input] REST API port (leave blank for no REST API server):
+<<<-------------> 0% EXECUTING [34s]
+[ant:input] Test REST API port (intended for running automated tests; leave blank for no server):
+<---<-------------> 0% EXECUTING [42s]
+[ant:input] Do you want support for multiple environments?  ([y], n)
+<<-------------> 0% EXECUTING [47s]
+[ant:input] Do you want resource files for a content database and set of users/roles created? ([y], n)
+<-------------> 0% EXECUTING [54s]
+Writing: gradle.properties
+Making directory: C:\YJ\src\marklogic\test-ml-gradle\src\main\ml-config
+Making directory: C:\YJ\src\marklogic\test-ml-gradle\src\main\ml-modules
+Writing project scaffolding files
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.0.1/userguide/command_line_interface.html#sec:command_line_warnings

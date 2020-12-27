@@ -1,30 +1,37 @@
-# Learning MarkLogic 10
+# Learning MarkLogic 10 (updated for version 10.0-15.2 Nov 2020 )
 
-## start by installing MarkLogic 10
+MarkLogic is a multi-modal NoSQL database that helps you store XML, JSON, plain text, geospatial, sematic triples in one single location.  
 
-## then by installing ml-gradle
+## Installing MarkLogic 10
 
-Installed JDK and MarkLogic 8 or above.
-I have installed JDK 13 and ML 10 as on Nov 22, 2019
+1. Download MarkLogic Server from <https://developer.marklogic.com/products/marklogic-server>  
+2. Perform typical install as per your OS (I am using Windows 64-bit) <https://docs.marklogic.com/guide/installation>
+3. Start the MarkLogic service
+4. Visit <http://localhost:8001> and do a typical setup
 
-    PS > java --version
+We would be using ml-gradle next to setup our first database.
 
-    java 13.0.1 2019-10-15
-    Java(TM) SE Runtime Environment (build 13.0.1+9)
-    Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
+## Installing ml-gradle
 
-and gradle
+A. Install latest OpenJDK from <https://jdk.java.net>
+
+    PS> java --version
+    openjdk 15.0.1 2020-10-20
+
+B. Install Gradle from <https://gradle.org/releases/>
 
     PS > gradle -v
+    -----------------------------------------------------
+    Gradle 6.7.1
 
-    Welcome to Gradle 6.0.1!
-
-This would now be used to setup database and code using automation
-Once gradle is setup , create a test folder say 'test-ml-gradle for our test proejct that we want to create using ml-gradle
+C. Create a blank folder called 'test-ml-gradle'
+D. and run below command to setup our first database project 'mlNewProject' using below:
 
     PS test-ml-gradle> gradle mlNewProject
 
-Answer the questions asked in the prompts
+# todo-yj start here
+
+D. Answer the questions asked in the prompts
 
     Task :mlNewProject
     Welcome to the new project wizard. Please answer the following questions to start a new project.
